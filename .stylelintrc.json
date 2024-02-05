@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "indentation": 2,
+    "number-leading-zero": "always",
+    "string-quotes": "single",
+    "selector-max-id": 0,
+    "max-nesting-depth": 3,
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute",
+          "class",
+          "id"
+        ]
+      }
+    ],
+    "block-no-empty": true,
+    "declaration-block-trailing-semicolon": "always"
+  }
+}
